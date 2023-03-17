@@ -1,6 +1,6 @@
 <div align="center">
 
-# Receipt Calculator ![Receipt Calculator](https://img.shields.io/badge/Portfolio-white?style=for-the-badge)
+# Receipt Calculator ![Receipt Calculator](https://img.shields.io/badge/Receipt%20Calculator-white?style=for-the-badge)
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
