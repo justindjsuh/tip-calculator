@@ -11,6 +11,11 @@
   gap: 1rem;
 }
 
+.selector__container {
+  display: flex;
+  justify-content: center;
+}
+
 .bill__container {
   display: flex;
   flex-direction: column;
@@ -116,6 +121,14 @@
 .tip__input input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.tip__button {
+  background-color: #738efa;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .bill__total {

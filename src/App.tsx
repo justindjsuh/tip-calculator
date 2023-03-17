@@ -12,6 +12,21 @@ function App() {
     setTipAmount(Math.round(100 * (tipValue / 100) * billAmount) / 100);
   };
 
+  const handleTipButton = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    const target = e.target as Element;
+    if (target.innerHTML === "5%") {
+      setTipValue(5);
+    } else if (target.innerHTML === "10%") {
+      setTipValue(10);
+    } else if (target.innerHTML === "15%") {
+      setTipValue(15);
+    } else if (target.innerHTML === "20%") {
+      setTipValue(20);
+    }
+  };
+
   useEffect(() => {
     setTipAmount(Math.round(100 * (tipValue / 100) * billAmount) / 100);
   });
@@ -19,10 +34,6 @@ function App() {
   return (
     <div className="App">
       <h1>Receipt Calculator</h1>
-      <div className="selector__container">
-        <button>Split Evenly</button>
-        <button>Manual Entry</button>
-      </div>
       <div className="bill__container">
         <div className="bill__amount">
           <p>Bill Subtotal (w/o tax)</p>
@@ -38,27 +49,33 @@ function App() {
         <div className="tip__amount">
           <div className="tip__amount__left">
             <p>Tip</p>
-            <button className="tip__button">5%</button>
-            <button className="tip__button">10%</button>
-            <button className="tip__button">15%</button>
-            <button className="tip__button">20%</button>
+            <button onClick={(e) => handleTipButton(e)} className="tip__button">
+              5%
+            </button>
+            <button onClick={(e) => handleTipButton(e)} className="tip__button">
+              10%
+            </button>
+            <button onClick={(e) => handleTipButton(e)} className="tip__button">
+              15%
+            </button>
+            <button onClick={(e) => handleTipButton(e)} className="tip__button">
+              20%
+            </button>
           </div>
           <div className="tip__input">
             <label>$</label>
             <input
               type="number"
-              placeholder={String(
-                Math.round(100 * (tipValue / 100) * billAmount) / 100
-              )}
+              placeholder={String(tipAmount)}
               onChange={(e) => handleTotalCalculation(e)}
             />
           </div>
         </div>
         <hr />
         <div className="bill__total">
-          <p>Total</p>
+          <p>Total (inc. tax)</p>
           <p className="total__amount">
-            ${(billAmount + tipAmount).toFixed(2)}
+            ${(billAmount + tipAmount + billAmount * 0.06).toFixed(2)}
           </p>
         </div>
       </div>
@@ -101,7 +118,11 @@ function App() {
         <div className="total_split__container">
           <p>Split total</p>
           <p className="total__amount">
-            ${((billAmount + tipAmount) / peopleValue).toFixed(2)}
+            $
+            {(
+              (billAmount + tipAmount + billAmount * 0.06) /
+              peopleValue
+            ).toFixed(2)}
           </p>
         </div>
       </div>
