@@ -73,7 +73,7 @@ function App() {
         </div>
         <hr />
         <div className="bill__total">
-          <p>Total (inc. tax)</p>
+          <p>Total (inc. PA tax)</p>
           <p className="total__amount">
             ${(billAmount + tipAmount + billAmount * 0.06).toFixed(2)}
           </p>
