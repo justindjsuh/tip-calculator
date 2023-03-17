@@ -37,5 +37,11 @@
 
 ## Lessons Learned
 <p>
-Before I begin, I must give credit to Demilade Olaleye for inspiring me to create an intro page. He had an amazing light/dark toggle animation I just needed to apply to my portfolio.
+This was a good reminder of TypeScript + React. It reminded me why TypeScript is so good. It definitely does take more of an effort to write the code, but it really saves you time in the long run. Though this is a very small project, so the benefit is a bit harder to see since the code base isn't that difficult to understand.
+</p>
+<p>
+Overall, this was a small project I was just able to check off the list of many other projects I have to complete. It was very fun to work on and reminded me how difficult it is to design simple things.
+</p>
+<p>
+ Credits to Marisa Breedt for the design. https://dribbble.com/MarisaBreedt
 </p>
