@@ -10,6 +10,7 @@
 
 
 [Purpose](#purpose) •
+[Screenshots](#screenshots) •
 [Tech Stack](#tech-stack) •
 [Lessons Learned](#lessons-learned)
 
