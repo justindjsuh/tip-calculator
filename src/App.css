@@ -11,11 +11,6 @@
   gap: 1rem;
 }
 
-.selector__container {
-  display: flex;
-  justify-content: center;
-}
-
 .bill__container {
   display: flex;
   flex-direction: column;
@@ -129,6 +124,7 @@
   padding: 0.3rem 0.6rem;
   border-radius: 30px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .bill__total {
